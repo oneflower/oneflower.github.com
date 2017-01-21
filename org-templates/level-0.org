@@ -1,0 +1,17 @@
+#+EMAIL:     oneflower3@gmail.com
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   sitemap.html
+#+LINK_HOME: index.html
+#+HTML_HEAD:    <link rel="stylesheet" type="text/css" href="../static/worg.css" />
+
+## Remove footnotes; they popped up after introducing analytics.
+#+OPTIONS: f:nil
+
+## Don't make author's on pages where one isn't specified.
+#+OPTIONS:   author:nil email:nil toc:nil
+

@@ -1,0 +1,36 @@
+#+SETUPFILE: ../org-templates/level-0.org
+#+OPTIONS:   author:t email:nil toc:t f:nil
+#+INCLUDE: "../org-templates/analytics.org"
+#+AUTHOR: Kojima Haruna
+
+emacs24 goodies
+* Get emacs 24
+  - Linux
+    - Debian and derivatives -- grab the debian ppa
+      #+BEGIN_SRC shell
+sudo add-apt-repository ppa:cassou/emacs
+sudo apt-get update
+      #+END_SRC
+    - Fedora 17+ has emacs 24 in the repos
+      #+BEGIN_SRC shell
+sudo yum install emacs
+      #+END_SRC
+    - Build from source
+      #+BEGIN_SRC shell
+bzr branch bzr://bzr.savannah.gnu.org/emacs/trunk emacs
+# or wget from http://ftp.gnu.org/pub/gnu/emacs/
+cd !!:$
+./autogen.sh
+./configure # you may want to use --with-x-toolkit=gtk3
+make
+      #+END_SRC
+  - OSX
+    - Either grab emacs for osx
+      #+BEGIN_SRC shell
+wget http://emacsformacosx.com/emacs-builds/Emacs-24.2-universal-10.6.8.dmg
+      #+END_SRC
+    - Or use homebrew
+      #+BEGIN_SRC shell
+brew install emacs --cocoa --use-git-head --HEAD
+      #+END_SRC
+    - Windows (?)
