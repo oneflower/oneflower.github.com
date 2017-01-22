@@ -4,7 +4,7 @@
 #+LANGUAGE:  en
 #+SETUPFILE: ../org-templates/level-0.org
 #+OPTIONS:   author:nil email:nil toc:nil
-#+INCLUDE: "../org-templates/analytics.org"
+#+INCLUDE:[] "../org-templates/analytics.org"
 #+LINK_UP: sitemap.html
 
 #+begin_center
