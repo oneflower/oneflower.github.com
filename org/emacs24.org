@@ -1,7 +1,9 @@
+#+TITLE:     Emacs24
+#+AUTHOR: Nikos Vasilakis
+#+DESCRIPTION:
 #+SETUPFILE: ../org-templates/level-0.org
 #+OPTIONS:   author:t email:nil toc:t f:nil
 #+INCLUDE: "../org-templates/analytics.org"
-#+AUTHOR: Kojima Haruna
 
 emacs24 goodies
 * Get emacs 24
@@ -34,3 +36,32 @@ wget http://emacsformacosx.com/emacs-builds/Emacs-24.2-universal-10.6.8.dmg
 brew install emacs --cocoa --use-git-head --HEAD
       #+END_SRC
     - Windows (?)
+
+  * Install Prelude
+  - Prelude is an enhanced Emacs configuration; More info can be found ‘[[http://batsov.com/prelude/][here]]
+    while the repo lives on ‘[[https://github.com/bbatsov/prelude][github]]
+  - First backup your previous configuration
+    #+BEGIN_SRC shell
+  mv .emacs{,BK}
+  mv .emacs.d{,_BK}
+    #+END_SRC
+  - Grab prelude isntaller from github and execute
+    #+BEGIN_SRC shell
+  curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
+  ll .emacs
+    #+END_SRC
+  - Now launch emacs 24
+    - It should start downloading and compiling packages
+    - If seems stuck: 1. Move your cursor or click 2. close and open
+      again
+    - (wait.. and go to step above if necessary)
+
+* Interlude -- or what to do next
+  - Launch and maybe install even more packages
+    - M-x list-packages shows all available packages
+      - For instance, install solarized theme
+  - Put your own .el customizations in ~/.emacs.d/personal
+* Postlude
+  - Example high-octane .emacs file from Zach
+    https://gist.github.com/3785014
+  - Keep sending interesting stuff

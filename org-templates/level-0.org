@@ -7,7 +7,7 @@
 #+EXPORT_EXCLUDE_TAGS: noexport
 #+LINK_UP:   sitemap.html
 #+LINK_HOME: index.html
-#+HTML_HEAD:    <link rel="stylesheet" type="text/css" href="../static/worg.css" />
+#+HTML_HEAD:    <link rel="stylesheet" type="text/css" href="../static/css/stylesheet.css" />
 
 ## Remove footnotes; they popped up after introducing analytics.
 #+OPTIONS: f:nil
