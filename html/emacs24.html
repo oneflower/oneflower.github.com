@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-01-22 Sun 12:29 -->
+<!-- 2017-01-23 Mon 15:08 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Emacs24</title>
 <meta  name="generator" content="Org-mode" />
-<meta  name="author" content="Kojima Haruna" />
+<meta  name="author" content="Nikos Vasilakis" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -150,6 +150,8 @@ for the JavaScript code in this tag.
 <div id="text-table-of-contents">
 <ul>
 <li><a href="#orgheadline1">Get emacs 24</a></li>
+<li><a href="#orgheadline2">Interlude &#x2013; or what to do next</a></li>
+<li><a href="#orgheadline3">Postlude</a></li>
 </ul>
 </div>
 </div>
@@ -213,13 +215,68 @@ Or use homebrew
 </div></li>
 <li>Windows (?)</li>
 </ul></li>
+
+<li>Install Prelude</li>
+<li>Prelude is an enhanced Emacs configuration; More info can be found ‘<a href="http://batsov.com/prelude/">here</a>
+    while the repo lives on ‘<a href="https://github.com/bbatsov/prelude">github</a></li>
+<li><p>
+First backup your previous configuration
+</p>
+<div class="org-src-container">
+
+<pre class="src src-shell">  mv .emacs{,BK}
+  mv .emacs.d{,_BK}
+</pre>
+</div></li>
+<li><p>
+Grab prelude isntaller from github and execute
+</p>
+<div class="org-src-container">
+
+<pre class="src src-shell">  curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
+  ll .emacs
+</pre>
+</div></li>
+<li>Now launch emacs 24
+<ul class="org-ul">
+<li>It should start downloading and compiling packages</li>
+<li>If seems stuck: 1. Move your cursor or click 2. close and open
+again</li>
+<li>(wait.. and go to step above if necessary)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline2" class="outline-2">
+<h2 id="orgheadline2">Interlude &#x2013; or what to do next</h2>
+<div class="outline-text-2" id="text-orgheadline2">
+<ul class="org-ul">
+<li>Launch and maybe install even more packages
+<ul class="org-ul">
+<li>M-x list-packages shows all available packages
+<ul class="org-ul">
+<li>For instance, install solarized theme</li>
+</ul></li>
+</ul></li>
+<li>Put your own .el customizations in ~/.emacs.d/personal</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgheadline3" class="outline-2">
+<h2 id="orgheadline3">Postlude</h2>
+<div class="outline-text-2" id="text-orgheadline3">
+<ul class="org-ul">
+<li>Example high-octane .emacs file from Zach
+<a href="https://gist.github.com/3785014">https://gist.github.com/3785014</a></li>
+<li>Keep sending interesting stuff</li>
 </ul>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: Kojima Haruna</p>
-<p class="date">Created: 2017-01-22 Sun 12:29</p>
+<p class="author">Author: Nikos Vasilakis</p>
+<p class="date">Created: 2017-01-23 Mon 15:08</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
