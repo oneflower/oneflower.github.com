@@ -2,17 +2,14 @@
 #+AUTHOR:    Mishal Awadah
 #+DESCRIPTION:
 #+KEYWORDS: haskell-mode haskell emacs major mode setup configuration init
-#+LANGUAGE:  en
-#+SETUPFILE: ../org-templates/level-0.org
-#+OPTIONS:   author:t email:nil toc:t f:nil num:1
-#+INCLUDE: "../org-templates/analytics.org"
+
 
 * [[http://www.haskell.org/platform/][The Haskell Platform]]
 
   Install the platform for your respective operating system [[http://www.haskell.org/platform/][here]].
 
 * Install haskell-mode
-  
+
   The haskell-mode package is a set of major modes for Emacs for
   writing Haskell code and working with Haskell projects. Features
   syntax highlighting, intelligent indentation, interaction with

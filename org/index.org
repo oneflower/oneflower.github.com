@@ -1,11 +1,6 @@
 #+TITLE:     Oneflower
 #+AUTHOR: oneflower
-#+DESCRIPTION:
-#+KEYWORDS:  emacs 
-#+LANGUAGE:  en
-#+SETUPFILE: ../org-templates/level-0.org
-#+OPTIONS:   author:nil email:nil toc:nil
-#+INCLUDE: "../org-templates/analytics.org"
+
 
 #+BEGIN_QUOTE
 自分がしたことは自分に返ってくる。努力すれば、それは结果として返ってく

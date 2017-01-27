@@ -1,9 +1,7 @@
 #+TITLE:     Emacs24
 #+AUTHOR: Nikos Vasilakis
 #+DESCRIPTION:
-#+SETUPFILE: ../org-templates/level-0.org
-#+OPTIONS:   author:t email:nil toc:t f:nil
-#+INCLUDE: "../org-templates/analytics.org"
+
 
 emacs24 goodies
 * Get emacs 24
@@ -37,7 +35,7 @@ brew install emacs --cocoa --use-git-head --HEAD
       #+END_SRC
     - Windows (?)
 
-  * Install Prelude
+* Install Prelude
   - Prelude is an enhanced Emacs configuration; More info can be found ‘[[http://batsov.com/prelude/][here]]
     while the repo lives on ‘[[https://github.com/bbatsov/prelude][github]]
   - First backup your previous configuration
