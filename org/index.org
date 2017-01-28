@@ -1,5 +1,5 @@
 #+TITLE:     Oneflower
-#+AUTHOR: oneflower
+#+AUTHOR: Oneflower
 #+DESCRIPTION:
 #+KEYWORDS:  emacs
 #+LANGUAGE:  en
