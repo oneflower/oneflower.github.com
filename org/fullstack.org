@@ -1,0 +1,4 @@
+- git flow
+- mysql+excel
+- gitlab ci/cd
+- pycharm debug 

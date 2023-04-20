@@ -6,10 +6,10 @@
 <!-- 2022-08-11 Thu 14:25 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Getting Started with Haskell</title>
+<title>Oneflower</title>
 <meta name="generator" content="Org mode" />
-<meta name="author" content="Mishal Awadah" />
-<meta name="keywords" content="haskell-mode haskell emacs major mode setup configuration init " />
+<meta name="author" content="Oneflower" />
+<meta name="keywords" content="emacs " />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -248,168 +248,23 @@ for the JavaScript code in this tag.
  |
  <a accesskey="H" href=""> HOME </a>
 </div><div id="content">
-<h1 class="title">Getting Started with Haskell</h1>
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#org9282077">The Haskell Platform</a></li>
-<li><a href="#org3874343">Install haskell-mode</a>
-<ul>
-<li><a href="#org3dc242c">Using the Emacs Package Manager</a></li>
-<li><a href="#orgdea43e8">Manually</a></li>
-</ul>
-</li>
-<li><a href="#org9000128">Configure Haskell-Mode</a></li>
-<li><a href="#orgf8db1f3">Using haskell-mode</a>
-<ul>
-<li><a href="#org000704f">The Haskell Interpreter <code>C-c C-l</code></a></li>
-</ul>
-</li>
-<li><a href="#org2d43522">References</a></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org9282077" class="outline-2">
-<h2 id="org9282077"><a href="http://www.haskell.org/platform/">The Haskell Platform</a></h2>
-<div class="outline-text-2" id="text-org9282077">
+<h1 class="title">Oneflower</h1>
+<blockquote>
 <p>
-Install the platform for your respective operating system <a href="http://www.haskell.org/platform/">here</a>.
+自分がしたことは自分に返ってくる。努力すれば、それは结果として返ってくるし、悪いことをした时も、罚として返ってきます。だから、いい行いをして、悪いことをしない、という自制をしてきました。
 </p>
-</div>
-</div>
+</blockquote>
 
-<div id="outline-container-org3874343" class="outline-2">
-<h2 id="org3874343">Install haskell-mode</h2>
-<div class="outline-text-2" id="text-org3874343">
-<p>
-The haskell-mode package is a set of major modes for Emacs for
-writing Haskell code and working with Haskell projects. Features
-syntax highlighting, intelligent indentation, interaction with
-inferior Haskell interpreter, code browsing, and Cabal project
-integration. It support Hugs, GHCi, Cabal and hslint, hoogle,
-cabal-dev, and other utilities.
+<div class="org-center">
+
+<div class="figure">
+<p><img src="../img/hm773.gif" alt="hm773.gif" />
 </p>
-
-<p>
-Find out more about it here
-<a href="http://www.haskell.org/haskellwiki/Haskell_mode_for_Emacs">http://www.haskell.org/haskellwiki/Haskell_mode_for_Emacs</a>
-</p>
-</div>
-
-<div id="outline-container-org3dc242c" class="outline-3">
-<h3 id="org3dc242c">Using the Emacs Package Manager</h3>
-<div class="outline-text-3" id="text-org3dc242c">
-<p>
-If you have Emacs 24, or have installed the Emacs package manager,
-you can simply use that to get haskell-mode. This is the best way
-to get haskell-mode, especially if you have semantic setup on your
-Emacs installation, as you will get Haskell library auto-completion too.
-</p>
-
-<pre class="example">
-M-x package-install &lt;RET&gt; haskell-mode &lt;RET&gt;
-</pre>
-</div>
-</div>
-
-<div id="outline-container-orgdea43e8" class="outline-3">
-<h3 id="orgdea43e8">Manually</h3>
-<div class="outline-text-3" id="text-orgdea43e8">
-<p>
-If you don't have the package manager, you'll need to get
-haskell-mode yourself and tell Emacs about it manually.
-</p>
-
-<p>
-Download haskell-mode from the <a href="https://github.com/haskell/haskell-mode">github source</a> and place it in
-your emacs configuration directory (default is ~/emacs.d/ but you
-can put it anywhere really). You will reference this below.
-</p>
-
-<p>
-Then, add the following line to your emacs configuration file, the
-default is <code>~/.emacs</code>, or <code>~/.emacs.d/init.el</code> depending on your
-setup. Here, I've placed the package under <code>~/emacs/plugins/</code>
-</p>
-
-<div class="org-src-container">
-<pre class="src src-elisp"><span style="color: #696969;">(</span>load <span style="color: #8b2252;">"~/emacs/plugins/haskell-mode/haskell-site-file"</span><span style="color: #696969;">)</span>
-</pre>
-</div>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org9000128" class="outline-2">
-<h2 id="org9000128">Configure Haskell-Mode</h2>
-<div class="outline-text-2" id="text-org9000128">
-<p>
-Like many major modes in Emacs, Haskell-mode is extremely
-configurable. Look at the details of what you can configure at the
-full how-to <a href="http://www.haskell.org/haskellwiki/Emacs/Installing_haskell-mode">here</a>.
-</p>
-
-<p>
-The recommended configuration is to enable doc-mode and
-indentation. This will give you access to built-in documentation of
-Haskell library functions, as well as smart indentation of your
-Haskell code just as Emacs does with most languages.
-</p>
-
-<p>
-To configure this, add the following lines to your emacs
-configuration file (<code>~/.emacs</code> or <code>~/.emacs.d/init.el</code>):
-</p>
-
-<div class="org-src-container">
-<pre class="src src-elisp"><span style="color: #696969;">(</span>add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode<span style="color: #696969;">)</span>
-<span style="color: #696969;">(</span>add-hook 'haskell-mode-hook 'turn-on-haskell-indentation<span style="color: #696969;">)</span>
-</pre>
-</div>
-
-<p>
-And you're done!
-</p>
-</div>
-</div>
-
-<div id="outline-container-orgf8db1f3" class="outline-2">
-<h2 id="orgf8db1f3">Using haskell-mode</h2>
-<div class="outline-text-2" id="text-orgf8db1f3">
-<p>
-Haskell-mode's most useful features are all passively enabled, and
-you should feel at home programming in Haskell with just the <code>TAB</code>
-key.
-</p>
-</div>
-
-<div id="outline-container-org000704f" class="outline-3">
-<h3 id="org000704f">The Haskell Interpreter <code>C-c C-l</code></h3>
-<div class="outline-text-3" id="text-org000704f">
-<p>
-Launch a Haskell interpreter that loads the current file you are
-editing with the shortcut <code>C-c C-l</code>. This is very useful for
-dynamically interacting with your code within Emacs.
-</p>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org2d43522" class="outline-2">
-<h2 id="org2d43522">References</h2>
-<div class="outline-text-2" id="text-org2d43522">
-<ul class="org-ul">
-<li>The Haskell Platform: <a href="http://www.haskell.org/platform/">http://www.haskell.org/platform/</a></li>
-<li>Official Haskell Mode Page:
-<a href="http://www.haskell.org/haskellwiki/Haskell_mode_for_Emacs">http://www.haskell.org/haskellwiki/Haskell_mode_for_Emacs</a></li>
-</ul>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: Mishal Awadah</p>
+<p class="author">Author: Oneflower</p>
 <p class="date">Created: 2022-08-11 Thu 14:25</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 27.1 (<a href="http://orgmode.org">Org</a> mode 9.3)</p>
 </div>

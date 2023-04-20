@@ -1,4 +1,5 @@
 #+TITLE: Sitemap
 
-   + [[file:haskell.org][Getting Started with Haskell]]
-   + [[file:index.org][Oneflower]]
+- [[file:haskell.org][Getting Started with Haskell]]
+- [[file:oneflower.org][Oneflower]]
+- [[file:org-demo.org][org-mode demo]]

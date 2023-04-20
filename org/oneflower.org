@@ -5,7 +5,7 @@
 #+LANGUAGE:  en
 #+SETUPFILE: ../org-templates/level-0.org
 #+OPTIONS:   author:t email:nil toc:nil
-#+INCLUDE: ../org-templates/analytics.org
+#+INCLUDE: "../org-templates/analytics.org"
 
 #+BEGIN_QUOTE
 自分がしたことは自分に返ってくる。努力すれば、それは结果として返ってくるし、悪いことをした时も、罚として返ってきます。だから、いい行いをして、悪いことをしない、という自制をしてきました。

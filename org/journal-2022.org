@@ -1,0 +1,34 @@
+** journal
+
+** scrapy
+scrapy runspider XXXspider.py
+scrapy crawl chocolatespider -O s3://aws_key:aws_secret@mybucket/path/to/myscrapeddata.csv:csv
+
+
+** curl
+curl -s/--silent
+curl -o filename
+curl -O #absolute path
+curl -s "http://localhost:7654/list-jobs.json?status=ACTIVE" | jq -r
+
+** redis-cli
+ping
+# pong
+keys *
+get key
+set key value
+
+** re
+
+groups() # tuple
+group()
+
+** rethinkdb
+rethinkdb --bind all --http-port 8085
+
+
+** Docker 
+
+Dockerfile
+docker build -t getting-started .
+docker run -dp 3000:3000 getting-started

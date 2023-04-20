@@ -1,0 +1,23 @@
+#+TITLE:     org-mode demo
+#+AUTHOR:    oneflower
+#+DESCRIPTION:
+#+KEYWORDS: org-mode, table
+#+LANGUAGE:  en
+#+SETUPFILE: ../org-templates/level-0.org
+#+OPTIONS:   author:t email:nil toc:t f:nil num:nil
+#+INCLUDE: ../org-templates/analytics.org
+
+** Python
+- list comprehension
+A list comprehension is a syntactic construct available in some programming languages for creating a list based on existing lists. It follows the form of the mathematical set-builder notation (set comprehension) as distinct from the use of map and filter functions.
+
+** 表格
+
+| 名称 | 单价 | 数量 |   花费 |
+|------+------+------+--------|
+| 苹果 |  4.2 | 50.4 | 211.68 |
+| 香蕉 |  3.3 | 39.6 | 130.68 |
+| 菠萝 |  2.3 |   23 |   52.9 |
+#+TBLFM: $4=$2*$3
+
+
